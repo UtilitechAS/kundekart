@@ -113,11 +113,17 @@ class GeoNames:
             return
         os.makedirs(CACHE, exist_ok=True)
         path = os.path.join(CACHE, f"{cc}.zip")
-        if not os.path.exists(path):
+        if not (os.path.exists(path) and zipfile.is_zipfile(path)):
             try:
-                open(path, "wb").write(http_get(f"https://download.geonames.org/export/zip/{cc}.zip"))
+                blob = http_get(f"https://download.geonames.org/export/zip/{cc}.zip")
             except Exception as e:
-                print(f"GeoNames: ingen fil for {cc} ({e})")
+                blob, err = b"", str(e)
+            else:
+                err = f"ikke en zip-fil ({len(blob)} byte, starter med {blob[:60]!r})"
+            if blob[:2] == b"PK":
+                open(path, "wb").write(blob)
+            else:
+                print(f"GeoNames: ingen gyldig fil for {cc} – {err}. Faller tilbake til Nominatim.")
                 self.pc[cc], self.places[cc] = {}, {}
                 return
         pcs, places = {}, {}
