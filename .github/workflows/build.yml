@@ -46,23 +46,25 @@ jobs:
           python scripts/build_map.py
           cat avvik.md >> "$GITHUB_STEP_SUMMARY"
 
-      - name: Oppdater avvikssak
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python scripts/report_issue.py
-
-      - name: Lagre Nominatim-cache
-        run: |
-          if ! git diff --quiet data/nominatim_cache.json; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git commit -m "Oppdater Nominatim-cache [skip ci]" data/nominatim_cache.json
-            git push
-          fi
-
       - uses: actions/upload-pages-artifact@v5
         with:
           path: site
 
       - id: deploy
         uses: actions/deploy-pages@v5
+
+      - name: Oppdater avvikssak
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/report_issue.py
+
+      - name: Lagre Nominatim-cache
+        if: always()
+        run: |
+          if ! git diff --quiet data/nominatim_cache.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Oppdater Nominatim-cache [skip ci]" data/nominatim_cache.json
+            git pull --rebase --autostash
+            git push
+          fi
