@@ -1,0 +1,717 @@
+country,postcode,city
+AT,1210,Vienna
+AT,2103,Langenzersdorf
+AT,2111,Tresdorf
+AT,2191,Schrick
+AT,2454,Sarasdorf
+AT,2463,Stixneusiedl
+AT,2604,Theresienfeld
+AT,2722,Weikersdorf
+AT,3331,Kematen / Ybbs
+AT,3362,OEHLING
+AT,3701,Großweikersdorf
+AT,3720,Oberravelsbach
+AT,3843,Dobersberg
+AT,3910,Zwettl
+AT,4624,Pennewang
+AT,4644,Scharnstein
+AT,4690,Pitzenberg
+AT,4690,RÜSTORF
+AT,4690,Schlatt
+AT,4691,Schlatt
+AT,4692,Niederthalheim
+AT,4910,Ried im Innkreis
+AT,4932,Kirchheim im Innkreis
+AT,4973,St. Martin Im Innkreis
+AT,5020,Salzburg
+AT,5071,Wals
+AT,6060,Hall
+AT,6130,Schwaz
+AT,6890,Lustenau
+AT,7000,Eisenstadt
+AT,7041,Wulkaprodersdorf
+AT,7203,Wiesen
+AT,7221,Marz
+AT,7312,Horitschon
+AT,7441,Steinbach im Burgenland
+AT,8041,Graz
+AT,8047,Graz
+AT,8074,Raaba-Grambach
+AT,8144,Tobelbad
+AT,8362,Söchau
+AT,8401,Kalsdorf bei Graz
+AT,8565,Söding - St. Johann
+AT,8580,Köflach
+AX,22100,Mariehamn
+AX,22130,Gottby
+AX,22150,Jomala
+AX,22310,Finström
+AX,22320,Ödkarby
+AX,22410,Godby
+AX,22430,Saltvik
+AX,22430,saltvik
+AX,22610,Lemland
+AX,AX-22100,Mariehamn
+CH,1034,Boussens
+CH,1046,Rueyres
+CH,1170,aubonne
+CH,1213,Petit-Lancy
+CH,1337,Vallorbe
+CH,1350,Orbe
+CH,1882,Gryon
+CH,1936,Verbier
+CH,3048,Worblaufen
+CH,3072,Ostermundigen
+CH,3073,Gümligen
+CH,3123,Belp
+CH,3555,Trubschachen
+CH,3662,Seftigen
+CH,5033,Buchs AG
+CH,5040,Schoeftland
+CH,5085,Sulz AG
+CH,5406,Ruetihof
+CH,6010,Kriens
+CH,6020,Emmenbrücke
+CH,6043,Adligenswil
+CH,6044,Udligenswil
+CH,6048,Horw
+CH,6102,Malters
+CH,6204,Sempach
+CH,6252,Dagmersellen
+CH,6288,Schongau
+CH,6288,Schongau / LU
+CH,6288,Schongau /LU
+CH,6344,Meierskappel
+CH,6403,Küssnacht
+CH,7104,Versam
+CH,8005,Zurich
+CH,8305,Dietlikon
+CH,8620,Wetzikon
+CY,4002,Limassol
+DE,01665,Käbschütztal
+DE,24939,Flensburg
+DE,71384,Weinstadt
+DE,83395,Freilassing
+DE,84359,Simbach am Inn
+DE,87648,Aitrang
+DK,1051,Copenhagen
+DK,1124,København K
+DK,1253,København
+DK,1363,København K
+DK,1415,København K
+DK,1459,København K
+DK,1577,København V
+DK,1728,København
+DK,1763,1763 København V
+DK,1815,Frederiksberg
+DK,1850,Frederiksberg C
+DK,1870,Frederiksberg
+DK,1905,Frederiksberg
+DK,1953,Frederiksberg C
+DK,1960,Frederiksberg C
+DK,1970,Frederiksberg C
+DK,2000,Frederiksberg
+DK,2100,Copenhagen
+DK,2100,København Ø
+DK,2100,copenhagen
+DK,2200,Copenhagen
+DK,2200,Copenhagen N
+DK,2200,Copenhagen N.
+DK,2200,København
+DK,2200,København N
+DK,2300,Copenhagen
+DK,2300,Copenhagen S
+DK,2300,København S
+DK,2300,kobenhavn S.
+DK,2300,københavn S
+DK,2400,Copenhagen
+DK,2400,Copenhagen NV
+DK,2400,København NV
+DK,2450,København SV
+DK,2500,Valby
+DK,2600,Glostrup
+DK,2600,glostrup
+DK,2605,Broendby
+DK,2605,Brondby
+DK,2605,Brøndby
+DK,2610,Rodovre
+DK,2610,Roedovre
+DK,2610,RØDOVRE
+DK,2610,Rødovre
+DK,2620,Albertslund
+DK,2630,Taastrup
+DK,2635,Ishøj
+DK,2640,Hedehusene
+DK,2640,hedehusene
+DK,2650,HVIDOVRE
+DK,2650,Hvidovre
+DK,2650,hvidovre
+DK,2660,Brøndby Strand
+DK,2665,Vallensbaek Strand
+DK,2665,Vallensbæk Strand
+DK,2670,Greve
+DK,2690,Karlslunde
+DK,2700,Broenshoej
+DK,2700,Bronshoj
+DK,2700,Brønshøj
+DK,2700,Copenhagen
+DK,2700,Glostrup
+DK,2720,Vanløse
+DK,2730,HERLEV
+DK,2730,Herlev
+DK,2740,Skovlunde
+DK,2750,Ballerup
+DK,2760,Maaloev
+DK,2760,Måløv
+DK,2765,Smørum
+DK,2770,KASTRUP
+DK,2770,Kastrup
+DK,2791,Dragoer
+DK,2791,Dragor
+DK,2791,Dragør
+DK,2800,Kgs Lyngby
+DK,2800,Kgs. Lyngby
+DK,2800,Kongens Lyngby
+DK,2800,Lyngby
+DK,2820,Gentofte
+DK,2830,"DK 2830 Virum, Danmark"
+DK,2830,Virum
+DK,2840,Holte
+DK,2850,Naerum
+DK,2850,Nærum
+DK,2860,Søborg
+DK,2870,Dyssegård
+DK,2880,Bagsværd
+DK,2900,Hellerup
+DK,2900,Hellerup (Copenhagen)
+DK,2920,Charlottenlund
+DK,2920,Charlottenund
+DK,2960,Rungsted Kyst
+DK,2970,Hoersholm
+DK,2980,KOKKEDAL
+DK,2980,Kokkedal
+DK,2980$,kokkedal
+DK,2990,Nivå
+DK,3000,Helsingor
+DK,3000,Helsingør
+DK,3050,Humlebæk
+DK,3060,Espergærde
+DK,3080,TIKØB
+DK,3140,Ålsgårde
+DK,3200,Helsinge
+DK,3210,Vejby
+DK,3230,Græsted
+DK,3250,Gilleleje
+DK,3300,Frederiksværk
+DK,3300,Frederikvaerk
+DK,3320,Skævinge
+DK,3330,Goerloese
+DK,3360,Liseleje
+DK,3370,MELBY
+DK,3370,Melby
+DK,3370,melby
+DK,3390,Hundested
+DK,3400,Hillerod
+DK,3400,Hillerød
+DK,3450,Allerød
+DK,3460,Birkerod
+DK,3460,Birkerød
+DK,3480,Fredensborg
+DK,3490,Kvistgaard
+DK,3500,Vaerlose
+DK,3500,Værløse
+DK,3500,værløse
+DK,3520,Farum
+DK,3540,Lynge
+DK,3550,Slangerup
+DK,3550,Slngerup
+DK,3600,Frederikssund
+DK,3630,Jaegerspris
+DK,3630,Jægerspris
+DK,3650,Oelstykke
+DK,3650,ØLSTYKKE
+DK,3650,Ølstykke
+DK,3660,Stenløse
+DK,3670,Veksø Sjælland
+DK,3700,Roenne
+DK,3700,Rønne
+DK,3730,Nexø
+DK,3790,Hasle
+DK,4000,Roskilde
+DK,4030,Tune
+DK,4040,Jyllinge
+DK,4050,Skibby
+DK,4060,Kirke Saaby
+DK,4060,Kirke Såby
+DK,4070,Kirke Hyllinge
+DK,4130,Viby
+DK,4130,Viby Sj.
+DK,4130,Viby Sjælland
+DK,4171,Glumsoe
+DK,4200,Slagelse
+DK,4305,Orø
+DK,4320,Lejre
+DK,4330,Hvalsø
+DK,4470,Svebølle
+DK,4534,Hørve
+DK,4621,Gadstrup
+DK,4800,Nykoebing f.
+DK,5000,Odense C
+DK,5220,Odense SØ
+DK,5250,Odense SV
+DK,5260,Odense
+DK,5260,Odense S
+DK,5270,ODENSE N
+DK,5270,Odense N
+DK,5560,Aarup
+DK,5592,Ejby
+DK,5700,Svendborg
+DK,5762,Vester Skerninge
+DK,5792,Årslev
+DK,5883,Oure
+DK,5884,Gudme
+DK,6300,Gråsten
+DK,6470,Sydals
+DK,6500,Vojens
+DK,6900,Skjern
+DK,6920,Videbaek
+DK,6950,Ringkøbing
+DK,7080,Børkop
+DK,7100,Vejle
+DK,7190,Billund
+DK,7200,Grindsted
+DK,7300,JELLING
+DK,7300,Jelling
+DK,7321,Gadbjerg
+DK,7323,Give
+DK,7361,Ejstrupholm
+DK,7400,Herning
+DK,7430,Ikast
+DK,7451,Sunds
+DK,7480,Vildbjerg
+DK,7500,Holstebro
+DK,7560,Hjerm
+DK,7570,Vemb
+DK,7600,Struer
+DK,7620,Lemvig
+DK,7700,Thisted
+DK,7752,Snedsted
+DK,7760,Hurup
+DK,7760,Hurup Thy
+DK,7800,Skive
+DK,7860,Spoettrup
+DK,7950,Erslev
+DK,8200,Aarhus N
+DK,8220,Brabrand
+DK,8260,Viby J
+DK,8270,Højbjerg
+DK,8300,Odder
+DK,8340,Malling
+DK,8355,Solbjerg
+DK,8362,Hoerning
+DK,8362,Hørning
+DK,8450,Hammel
+DK,8462,Harlev J
+DK,8464,Galten
+DK,8600,Silkeborg
+DK,8660,Skanderborg
+DK,8670,Låsby
+DK,8680,Ry
+DK,8732,Hovedgaard
+DK,8740,Braedstrup
+DK,8740,Brædstrup
+DK,8800,Viborg
+DK,8830,Tjele
+DK,8832,Skals
+DK,8900,Randers C
+DK,8960,Randers sø
+DK,9000,Aalborg
+DK,9200,Aalborg SV
+DK,9210,Aalborg
+DK,9210,Aalborg SØ
+DK,9220,Aalborg
+DK,9220,Aalborg Oe
+DK,9240,Nibe
+DK,9270,Klarup
+DK,9300,Sæby
+DK,9310,Vodskov
+DK,9320,Hjallerup
+DK,9330,Dronninglund
+DK,9380,Vestbjerg
+DK,9400,Nørresundby
+DK,9430,Vadum
+DK,9500,Hobro
+DK,9520,skørping
+DK,9530,Stoevring
+DK,9530,Støvring
+DK,9550,Mariager
+DK,9560,Hadsund
+DK,9575,Terndrup
+DK,9610,Nørager
+DK,9632,Møldrup
+DK,9670,Løgstør
+DK,9750,Østervrå
+DK,9760,Vrå
+DK,9800,Hjørring
+DK,9870,Sindal
+DK,9881,Bindslev
+DK,DK 3650,Oelstykke
+DK,DK-1668,København V
+DK,DK-2300,Copenhagen
+DK,DK-2600,Glostrup
+DK,DK-2830,Virum
+DK,DK-2980,Kokkedal
+DK,DK-3450,Allerød
+DK,DK-3460,Birkerød
+DK,DK-3520,Farum
+DK,DK-5450,Otterup
+DK,DK-9230,Svenstrup J
+DK,DK-9330,Dronninglund
+DK,DK2600,Glostrup
+DK,DK7752,Snedsted
+DK,Dk2300,København
+ES,08222,Terrassa
+FI,00130,Helsinki
+FI,01150,Sipoo
+FI,04130,Sipoo
+FI,04220,Kerava
+FI,21630,Parainen
+FI,23360,kustavi
+FI,2610å,Rauma
+FI,29680,Lassila
+FI,33960,Pirkkala
+FI,39150,Pinsiö
+FI,65300,Vaasa
+FI,65730,Jungsund
+FI,68630,Jakobstad
+FI,81100,Kontiolahti
+FI,82900,Ilomantsi
+FO,110,Torshavn
+FR,92300,Levallois Perret
+HU,1221,Budapest
+HU,7095,Iregszemcse
+IE,K36 E336,Malahide
+IS,113,Reykjavik
+IS,800,Selfoss
+JE,JE23EA,St. Helier
+LT,LT-08126,Vilnius
+NL,1871TH,Schoorl
+NL,3201 LW,Spijkenisse
+NL,3817BM,Amersfoort
+NO,7715,STEINKJER
+PL,01-100,Warszawa
+PL,02-312,Warszawa
+SE,117 57,Stockholm
+SE,12054,Årsta
+SE,12472,Bandhagen
+SE,12944,Hagersten
+SE,13150,Saltsjö-Duvnäs
+SE,132 37,Saltsjö-Boo
+SE,132 48,Saltsjö-Boo
+SE,13232,Saltsjo-Boo
+SE,13236,Saltsjö-boo
+SE,13236,saltsjö-boo
+SE,13239,Saltsjö-Boo
+SE,13248,Saltsjö-Boo
+SE,13251,Saltsjö boo
+SE,13551,Tyreso
+SE,14132,Huddinge
+SE,14560,NORSBORG
+SE,153 31,Järna
+SE,163 43,Spånga
+SE,16346,Spånga
+SE,175 67,Järfälla
+SE,177 61,Järfälla
+SE,18161,Lidingö
+SE,183 77,Täby
+SE,18338,Taby
+SE,18463,Åkersberga
+SE,18470,Åkersberga
+SE,18633,Vallentuna
+SE,18647,Vallentuna
+SE,18693,Vallentuna
+SE,18697,Brottby
+SE,187 43,Täby
+SE,18743,Täby
+SE,18775,Täby
+SE,191 44,Sollentuna
+SE,191 46,Sollentuna
+SE,19138,Sollentuna
+SE,19141,Sollentuna
+SE,19144,Sollentuna
+SE,19146,Sollentuna
+SE,19248,Sollentuna
+SE,19255,Sollentuna
+SE,19270,Sollentuna
+SE,19271,Sollentuna
+SE,21152,Malmö
+SE,216 12,Limhamn
+SE,21616,Limhamn
+SE,23132,Trelleborg
+SE,23153,Trelleborg
+SE,23156,Trelleborg
+SE,23162,Trelleborg
+SE,23169,Skegrie
+SE,23193,TRELLEBORG
+SE,233 39,SVEDALA
+SE,23731,Bjärred
+SE,247 32,Södra Sandby
+SE,24732,Södra Sandby
+SE,24735,Sodra Sandby
+SE,24753,Dalby
+SE,254 33,Helsingborg
+SE,25482,Helsingborg
+SE,26352,Lerberget
+SE,26878,Kågeröd
+SE,27136,Ystad
+SE,27142,Ystad
+SE,27153,Ystad
+SE,27154,Ystad
+SE,27192,Ystad
+SE,275 39,Sjöbo
+SE,29194,Kristianstad
+SE,29436,Sölvesborg
+SE,29538,Bromölla
+SE,298 94,Linderod
+SE,312 51,Knäred
+SE,31250,Vallberga
+SE,341 42,Ljungby
+SE,371 30,Karlskrona
+SE,371 37,Karlskrona
+SE,371 54,Karlskrona
+SE,37160,Lyckeby
+SE,37163,Lyckeby
+SE,372 97,Ronneby
+SE,37231,Ronneby
+SE,37330,Nättraby
+SE,38234,Nybro
+SE,38244,Nybro
+SE,41320,Gothenborg
+SE,41756,Göteborg
+SE,42354,Torslanda
+SE,42372,Säve
+SE,42658,Västra Frölunda
+SE,431 59,Mölndal
+SE,43236,Varberg
+SE,43278,Tvååker
+SE,43294,Varberg
+SE,43436,Kungsbacka
+SE,43537,Mölnlycke
+SE,43541,Mölnlycke
+SE,43542,Mölnlycke
+SE,43544,Mölnlycke
+SE,43835,Landvetter
+SE,43854,Hindås
+SE,43898,Hindås
+SE,44292,Romelanda
+SE,44350,Lerum
+SE,44455,Stenungsund
+SE,445 34,Bohus
+SE,44536,Bohus
+SE,44636,Älvöängen
+SE,44691,Alvhem
+SE,449 44,Nol
+SE,44936,Nödinge
+SE,45330,Lysekil
+SE,461 42,Trollhättan
+SE,461 58,Trollhättan
+SE,46135,Trollhättan
+SE,46139,Trollhättan
+SE,46191,Trollhättan
+SE,46396,Nygård
+SE,51396,Fristad
+SE,519 30,Horred
+SE,51930,HORRED
+SE,522 30,Tidaholm
+SE,522 33,Tidaholm
+SE,52235,Tidaholm
+SE,52292,Tidaholm
+SE,53165,LIDKOPING
+SE,532 33,Skara
+SE,54336,Tibro
+SE,54434,Hjo
+SE,54960,Skövde
+SE,56136,Huskvarna
+SE,56192,Huskvarna
+SE,56634,Habo
+SE,56635,Habo
+SE,56732,Vaggeryd
+SE,571 37,Nässjö
+SE,57138,Nässjö
+SE,57143,Nässjö
+SE,57793,Vena
+SE,57793,Vena/Hultsfred
+SE,57799,Pauliström
+SE,58228,Linköping
+SE,58235,Linköping
+SE,58332,Linköping
+SE,58334,LINKÖPING
+SE,58591,Linköping
+SE,59891,Vimmerby
+SE,62137,Visby
+SE,622 36,Romakloster
+SE,62342,Havdhem
+SE,63221,Eskilstuna
+SE,65221,Karlstad
+SE,65465,Karlstad
+SE,65468,Karlstad
+SE,681 52,Kristinehamn
+SE,68143,Kristinehamn
+SE,68150,Kristinehamn
+SE,682 34,Filipstad
+SE,69141,Karlskoga
+SE,69153,Karlskoga
+SE,711 94,Lindesberg
+SE,71134,Lindesberg
+SE,71193,Lindesberg
+SE,71394,Nora
+SE,71830,Frövi
+SE,72213,Västerås
+SE,72245,Västerås
+SE,72343,Västerås
+SE,72349,Västerås
+SE,724 71,Västerås
+SE,724 75,Västerås
+SE,72464,Västerås
+SE,725 91,Västerås
+SE,72591,Västerås
+SE,72592,Vasteras
+SE,72594,Västerås
+SE,72596,Västerås
+SE,73133,Köping
+SE,73135,Köping
+SE,73231,Arboga
+SE,73295,Arboga
+SE,73298,Arboga
+SE,734 40,Hallstahammar
+SE,73436,Hallstahammar
+SE,73437,Hallstahammar
+SE,73451,Kolbäck
+SE,736 30,Kungsör
+SE,73691,Kungsör
+SE,74362,Bjorklinge
+SE,74371,Björklinge
+SE,74381,Bälinge
+SE,746 35,Balsta
+SE,75334,Uppsala
+SE,76173,Norrtälje
+SE,76176,Norrtälje
+SE,76241,Rimbo
+SE,77143,Ludvika
+SE,776 95,Vikmanshyttan
+SE,77633,Hedemora
+SE,77636,HEDEMORA
+SE,78160,Gustafs
+SE,78195,Borlänge
+SE,78198,Borlänge
+SE,78235,Malung
+SE,78331,Säter
+SE,78332,Säter
+SE,784 36,Borlänge
+SE,784 54,Borlänge
+SE,784 54,Boränge
+SE,78437,Borlänge
+SE,784443,BORLÄNGE
+SE,78450,Borlange
+SE,78454,BORLÄNGE
+SE,78455,Borlänge
+SE,78461,Borlänge
+SE,78462,Borlänge
+SE,78468,Borlänge
+SE,78473,Borlänge
+SE,78475,Borlänge
+SE,78561,Djurås
+SE,79015,Falun
+SE,79015,Sundborn
+SE,791 56,Falun
+SE,791 91,Falun
+SE,791 93,Falun
+SE,79174,Falun
+SE,79176,Falun
+SE,79193,Falun
+SE,79194,Falun
+SE,79336,Leksand
+SE,79341,INSJON
+SE,79360,Siljansnas
+SE,79390,Leksand
+SE,795 36,Rättvik
+SE,79532,Rattvik
+SE,79532,Rättvik
+SE,79535,RÄTTVIK
+SE,79535,Rättvik
+SE,79536,Rättvik
+SE,79592,Rättvik
+SE,79595,Vikarbyn
+SE,802 57,Gavle
+SE,802 64,Gävle
+SE,802 67,Gävle
+SE,804 31,Gävle
+SE,804 32,Gävle
+SE,80431,Gävle
+SE,80592,Gävle
+SE,80595,GÄVLE
+SE,80596,Gävle
+SE,806 47,Gävle
+SE,806 48,Gävle
+SE,80627,Gävle
+SE,80643,Gävle
+SE,80645,Gavle
+SE,80648,Gävle
+SE,811 71,Järbo
+SE,81135,Sandviken
+SE,81161,Sandviken
+SE,81199,Arsunda
+SE,81290,STORVIK
+SE,81290,Storvik
+SE,81394,Torsåker
+SE,81569,Månkarbo
+SE,81831,Valbo
+SE,82891,EDSBYN
+SE,832 53,Frösön
+SE,83598,OFFERDAL
+SE,83796,Undersåker
+SE,84531,Svenstavik
+SE,871 71,Älandsbro
+SE,87171,ÄLANDSBRO
+SE,87192,Härnösand
+SE,89141,ÖRNSKÖLDSVIK
+SE,90593,Umeå
+SE,90596,Umeå
+SE,90638,Umeå
+SE,91593,Robertsfors
+SE,91597,Bygdea
+SE,91834,Sävar
+SE,93154,Skellefteå
+SE,93451,Byske
+SE,93931,Malå
+SE,94164,Piteå
+SE,94191,Piteå
+SE,943 31,Öjebyn
+SE,95393,Karungi
+SE,954 35,GAMMELSTAD
+SE,95441,Södra Sunderbyn
+SE,95595,Niemisel
+SE,97341,LULEÅ
+SE,97432,Luleå
+SE,97434,Luleå
+SE,97437,Luleå
+SE,97438,Luleå
+SE,97441,Luleå
+SE,97454,Luleå
+SE,975 61,Luleå
+SE,97592,Lulea
+SE,97592,Luleå
+SE,97593,Luleå
+SE,97594,Luleå
+SE,97595,Luleå
+SE,97596,Luleå
+SE,97631,Luleå
+SE,97632,Luleå
+SE,97753,Lulea
+SE,S-54196,Väring
+SE,S-61691,Aby
+SE,S-78454,Borlänge
+SE,SE-266 98,Hjärnarp
+SE,SE-341 55,Vittaryd
+SI,1000,Ljubljana
+ZA,6530,George
