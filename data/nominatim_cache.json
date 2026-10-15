@@ -1,1 +1,20 @@
-{}
+{
+"{\"city\": \"Glostrup\", \"countrycodes\": \"no\"}": null,
+"{\"city\": \"København N\", \"countrycodes\": \"no\"}": null,
+"{\"city\": \"København S\", \"countrycodes\": \"no\"}": null,
+"{\"city\": \"Rønne\", \"countrycodes\": \"no\"}": [
+60.5561036,
+12.0180012
+],
+"{\"city\": \"Söding - St. Johann\", \"countrycodes\": \"at\"}": [
+47.0061026,
+15.2623772
+],
+"{\"city\": \"Værløse, Danmark\", \"countrycodes\": \"no\"}": null,
+"{\"countrycodes\": \"at\", \"postalcode\": \"8565\"}": null,
+"{\"countrycodes\": \"no\", \"postalcode\": \"2200\"}": null,
+"{\"countrycodes\": \"no\", \"postalcode\": \"2300\"}": null,
+"{\"countrycodes\": \"no\", \"postalcode\": \"2600\"}": null,
+"{\"countrycodes\": \"no\", \"postalcode\": \"3500\"}": null,
+"{\"countrycodes\": \"no\", \"postalcode\": \"3700\"}": null
+}
