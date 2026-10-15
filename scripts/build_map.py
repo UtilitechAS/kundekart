@@ -21,6 +21,7 @@ UA = "amsleser-kundekart/1.0 (+https://github.com/UtilitechAS/kundekart)"
 
 # Land med kun sifre i postnummeret: alt annet enn sifre fjernes (f.eks. "DK-2100", "SE 123 45").
 NUMERIC = set("NO DK SE FI AX DE AT CH IS CY ES SI HU LT PL FR FO HR ZA IT BE LU EE LV CZ SK GR PT".split())
+WRONG_COUNTRY_CANDIDATES = ["NO", "SE", "DK", "FI", "DE", "AT", "CH"]
 CITY_MOVE_KM = 25  # sted og postnummer lenger fra hverandre enn dette => bruk stedet, meld avvik
 
 
@@ -204,13 +205,13 @@ def main():
     groups = {}
     for cc, pc, city, src in rows:
         cc = (cc or "").strip().upper()
-        key = (cc, norm_pc(cc, pc))
+        key = (cc, norm_pc(cc, pc), norm_name(city))  # samme postnr med ulike steder holdes adskilt
         g = groups.setdefault(key, {"raw": pc.strip(), "cities": {}, "src": set()})
         g["cities"][city.strip()] = g["cities"].get(city.strip(), 0) + 1
         g["src"].add(src)
 
     points, avvik = {}, []
-    for (cc, pc), g in sorted(groups.items()):
+    for (cc, pc, _), g in sorted(groups.items()):
         city = max(g["cities"], key=g["cities"].get)  # mest brukte stedsnavn
         label = f"{cc} {g['raw']} {city}"
         pos = None
@@ -236,6 +237,19 @@ def main():
             continue
 
         hits = gn.lookup_pc(cc, pc)
+        city_ok = hits and any(name_match(city, h[0]) or name_match(city, h[1]) for h in hits)
+        if not city_ok:  # feil land valgt ved registrering? Prøv nabolandene
+            for other in WRONG_COUNTRY_CANDIDATES:
+                if other == cc:
+                    continue
+                h2 = gn.lookup_pc(other, norm_pc(other, g["raw"]))
+                if h2 and any(name_match(city, h[0]) or name_match(city, h[1]) for h in h2):
+                    pos = (sum(h[2] for h in h2) / len(h2), sum(h[3] for h in h2) / len(h2))
+                    avvik.append((label, f"feil land i registreringen – plassert i {other}"))
+                    break
+            if pos:
+                points[(round(pos[0], 3), round(pos[1], 3))] = 1
+                continue
         if hits:
             pos = (sum(h[2] for h in hits) / len(hits), sum(h[3] for h in hits) / len(hits))
             if not any(name_match(city, h[0]) or name_match(city, h[1]) for h in hits):
@@ -266,13 +280,13 @@ def main():
 
     with open(os.path.join(ROOT, "avvik.md"), "w", encoding="utf-8") as f:
         f.write(f"Kundekart bygget {time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime())}: "
-                f"{len(groups)} unike postnumre, {len(points)} markører, {len(avvik)} avvik.\n\n")
+                f"{len(groups)} unike postnr/sted, {len(points)} markører, {len(avvik)} avvik.\n\n")
         if avvik:
             f.write("Rett i `data/corrections.csv` (country,postcode,new_postcode,lat,lon,note). "
                     "Tom new_postcode og lat/lon = ignorer.\n\n| Adresse | Avvik |\n|---|---|\n")
             for lab, msg in avvik:
                 f.write(f"| {lab} | {msg} |\n")
-    print(f"{len(groups)} unike postnumre, {len(points)} markører, {len(avvik)} avvik")
+    print(f"{len(groups)} unike postnr/sted, {len(points)} markører, {len(avvik)} avvik")
 
 
 if __name__ == "__main__":
