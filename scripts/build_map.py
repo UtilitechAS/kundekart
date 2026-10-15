@@ -199,12 +199,21 @@ def main():
     else:
         print("PS_API_KEY mangler – kjører kun med Lectronz-data")
     corr = load_corrections()
+    excl_path = os.path.join(DATA, "exclude_countries.txt")
+    exclude = set()
+    if os.path.exists(excl_path):
+        for line in open(excl_path, encoding="utf-8"):
+            code = line.split("#")[0].strip().upper()
+            if code:
+                exclude.add(code)
     gn, nom = GeoNames(), Nominatim()
 
     # Slå sammen til unike (land, postnummer); behold alle stedsnavn for kontroll
     groups = {}
     for cc, pc, city, src in rows:
         cc = (cc or "").strip().upper()
+        if cc in exclude:
+            continue
         key = (cc, norm_pc(cc, pc), norm_name(city))  # samme postnr med ulike steder holdes adskilt
         g = groups.setdefault(key, {"raw": pc.strip(), "cities": {}, "src": set()})
         g["cities"][city.strip()] = g["cities"].get(city.strip(), 0) + 1
