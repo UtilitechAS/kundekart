@@ -1,0 +1,2 @@
+# Land som ikke skal vises på kartet (ISO-kode, én per linje)
+IS  # Island: HAN-port kunne ikke aktiveres
