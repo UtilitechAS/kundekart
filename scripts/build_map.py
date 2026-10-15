@@ -73,7 +73,7 @@ def ps_get(resource, display):
 
 
 def load_prestashop():
-    countries = {c["id"]: c["iso_code"] for c in ps_get("countries", "[id,iso_code]")}
+    countries = {str(c["id"]): c["iso_code"] for c in ps_get("countries", "[id,iso_code]")}
     addresses = {str(a["id"]): a for a in ps_get("addresses", "[id,postcode,city,id_country]")}
     used = {str(o["id_address_delivery"]) for o in ps_get("orders", "[id,id_address_delivery]")}
     out = []
@@ -179,6 +179,8 @@ class Nominatim:
             try:
                 res = json.loads(http_get(f"https://nominatim.openstreetmap.org/search?{q}"))
                 self.cache[key] = [float(res[0]["lat"]), float(res[0]["lon"])] if res else None
+                if len(self.cache) % 25 == 0:
+                    self.save()  # lagre underveis
             except Exception as e:
                 print(f"Nominatim feilet for {params}: {e}")
                 return None
@@ -226,6 +228,9 @@ def main():
                 points[(round(pos[0], 3), round(pos[1], 3))] = 1
                 continue
 
+        if not re.fullmatch(r"[A-Z]{2}", cc):
+            avvik.append((label, "ukjent land"))
+            continue
         if not pc:
             avvik.append((label, "mangler postnummer"))
             continue
