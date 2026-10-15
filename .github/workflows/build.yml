@@ -1,0 +1,68 @@
+name: Bygg kundekart
+
+on:
+  schedule:
+    - cron: "17 3 * * 1"   # mandager 03:17 UTC
+  workflow_dispatch:        # manuell kjøring fra Actions-fanen
+  push:
+    branches: [main]
+    paths: ["data/**", "site/**", "scripts/**"]
+
+permissions:
+  contents: write   # lagre Nominatim-cache
+  issues: write     # avviksliste
+  pages: write
+  id-token: write
+
+concurrency:
+  group: kundekart
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Cache GeoNames
+        uses: actions/cache@v4
+        with:
+          path: .cache
+          key: geonames-${{ github.run_id }}
+          restore-keys: geonames-
+
+      - name: Bygg kart
+        env:
+          PS_API_URL: ${{ vars.PS_API_URL }}
+          PS_API_KEY: ${{ secrets.PS_API_KEY }}
+        run: |
+          python scripts/build_map.py
+          cat avvik.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Oppdater avvikssak
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/report_issue.py
+
+      - name: Lagre Nominatim-cache
+        run: |
+          if ! git diff --quiet data/nominatim_cache.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Oppdater Nominatim-cache [skip ci]" data/nominatim_cache.json
+            git push
+          fi
+
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+
+      - id: deploy
+        uses: actions/deploy-pages@v5
